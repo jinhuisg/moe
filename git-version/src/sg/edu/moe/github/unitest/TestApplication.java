@@ -17,10 +17,14 @@ public class TestApplication {
 	
 	public static void main(String[] args) { 
 		System.out.println("Hello World, it is from MOE!");
+		(new TestApplication()).print("abc");
 	}
 	
 	private void print(String value) { 
 		
 		System.out.println("Yes, the value is: " + value);
+		
+		AnotherTest test = new AnotherTest();
+		System.out.println("Value from AnotherTest is" + test.getVALUE());
 	}	
 }
